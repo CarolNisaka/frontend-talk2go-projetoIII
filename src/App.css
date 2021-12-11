@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -13,7 +13,7 @@
   }
 }
 
-.App-header {
+.App-header { //essa é a cor que quero de fundo por isso nao tirei daqui
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -24,7 +24,7 @@
   color: white;
 }
 
-.App-link {
+.App-link { // essa cor tmb gosto pq é da fonte
   color: #61dafb;
 }
 
@@ -35,4 +35,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
