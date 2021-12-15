@@ -1,0 +1,16 @@
+.welcome {
+    padding: 10px;
+    background-color: #282c34;
+    color: black;
+}
+
+.chanel {
+   
+    background-color: rgb(3, 54, 54);
+    text-align: center;
+    /* height: 30vh; */
+}
+
+.button-chanel {
+    margin: 20px;
+}

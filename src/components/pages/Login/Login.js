@@ -32,8 +32,11 @@ function Login () {
                 const tokenResponse = await login(formData.email, formData.senha);
 
                 console.log('resposta da API', tokenResponse);
+
+                localStorage.setItem('token', tokenResponse.token); //para guardar o token no localstorage
+
                 navigate('/home');
-                //parei no 04:52:50
+               
             } catch (error) {//NAO TA FUNCIONANDO MEU SET ERRORS!!!
                 setErrors({
                     email: error.response.data.error,
@@ -69,7 +72,7 @@ function Login () {
                 <Form.Group as={Col} md="12" controlId="login-form">
                 <Form.Label>Senha</Form.Label>
                 <Form.Control
-                    type="text"
+                    type="password"
                     name="senha"
                     value={values.senha}
                     onChange={handleChange}
@@ -89,6 +92,16 @@ function Login () {
                     Login
                 </Button>
             </Form>
+
+            <br/>
+
+            <p>Não tem cadastro?</p>
+            <Button className="register"
+            variant="warning"
+            a href="/register"
+            >
+                Clique aqui
+            </Button>
         </TemplatePublic>
     );
 };

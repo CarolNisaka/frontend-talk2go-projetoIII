@@ -1,0 +1,36 @@
+.template-private-container {
+    display: flex;
+    /* background-color: #282c34; */
+    /* border: 2px solid green; */
+    height: 100vh;
+
+    
+}
+
+.NavBar {
+    background-color: #282c34;
+}
+
+.template-private-content {
+    /* border: 2px solid red; */
+    flex:1;
+    width: 100%;
+    
+}
+
+.flex-column {
+   
+    margin: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(206, 25, 25);
+    font-size: larger;
+    
+   
+}
+
+/*  */
+/* #45858C
+#A0D9D9
+#D9C589
+#BF9765
+#D92B04 */
