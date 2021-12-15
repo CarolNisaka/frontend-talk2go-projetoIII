@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react';
 import './Home.css';
 
 import TemplatePrivate from '../../templates/TemplatePrivate/TemplatePrivate';
-import { date } from 'yup';
+
 
 import Button from 'react-bootstrap/Button';
 
 import {HiDesktopComputer} from 'react-icons/hi';
 import { MdOutlineStorefront, MdStorefront } from 'react-icons/md';
 
+import { getOneUsuario } from '../../../services/api';
 function Home () {
 
     
@@ -16,17 +17,19 @@ function Home () {
        <TemplatePrivate>
         
         <div className='welcome'>
-            <h1>Ola,  !  Hoje é </h1>
+            <h1>Ola,   !  Hoje é </h1>
             
             
         </div>
         
 
         <div className='chanel'>
+            <br/>
             <h2>Canais de atendimento</h2>
 
             <Button className='button-chanel'
-                variant="outline-primary">
+                variant="outline-primary"
+                a href='/atendimentoloja'>
                 Cliente na loja Eldorado 
                 <MdOutlineStorefront/>
             </Button>

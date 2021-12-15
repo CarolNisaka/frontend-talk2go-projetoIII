@@ -1,0 +1,11 @@
+.loja {
+    background-color: rgb(3, 30, 56);
+    height: 100vh;
+    display: flex;
+}
+
+.title {
+    margin: 30px;
+    align-items: center;
+    border: 2px solid red;
+}
