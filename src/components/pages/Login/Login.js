@@ -17,7 +17,7 @@ const loginSchema = yup.object().shape({
 });
 
 
-function Login () {
+function Login ( { loginUser }) {
 
     const navigate = useNavigate();
     
@@ -34,6 +34,8 @@ function Login () {
                 console.log('resposta da API', tokenResponse);
 
                 localStorage.setItem('token', tokenResponse.token); //para guardar o token no localstorage
+                
+                loginUser();
 
                 navigate('/home');
                

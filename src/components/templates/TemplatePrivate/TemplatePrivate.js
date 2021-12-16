@@ -45,7 +45,7 @@ function TemplatePrivate ({ children}) {
 
                     <a 
                     className="atender"
-                    href="/iniciarAtendimento"
+                    href="/atendimentoloja"
                     >
                     <FaPeopleArrows size="35px" />
                     </a>

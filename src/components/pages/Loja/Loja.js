@@ -5,7 +5,7 @@ import { MdOutlineStorefront, MdStorefront } from 'react-icons/md';
 import { useFormik } from "formik";
 
 
-function Loja () {
+function Loja (props) {
     return (
         <TemplatePrivate>
             <div className="loja">
@@ -15,7 +15,7 @@ function Loja () {
                         Atendimento na loja Eldorado
                     </h1> 
 
-                    <Form>
+                    {/* <Form> */}
                         <div>
                             cliente
                         </div>
@@ -27,7 +27,7 @@ function Loja () {
                         <div>
                             Forma de atendimento
                         </div>
-                    </Form>
+                    {/* </Form> */}
                 </div>
 
                 <div>
