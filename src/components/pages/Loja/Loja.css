@@ -4,8 +4,30 @@
     display: flex;
 }
 
-.title {
+.atendimento-container {
     margin: 30px;
     align-items: center;
     border: 2px solid red;
+    
+}
+
+.cliente-container{
+    margin: 10px;
+    color: royalblue !important;
+}
+
+.pedido-container {
+    margin: 10px;
+}
+
+.forma-de-contato-container {
+    margin: 10px;
+}
+
+.button-declinar {
+    margin: 10px;
+}
+
+.button-continuar {
+    margin: 10px;
 }

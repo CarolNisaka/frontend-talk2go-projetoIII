@@ -40,6 +40,13 @@ export const getClientes = async (buscaCliente, token) => {
     return response.data;
 };
 
+export const getOneCliente = async (clienteId, token) => {
+    const response = await api.get(`/clientes/${clienteId}`, setHeaders(token));
+
+    return response.data;
+};
+
+//aqui é body ou apelido? 
 export const createOneCliente = async (body, token) => {
     const response = await api.post('/clientes', body, setHeaders(token));
 
@@ -53,3 +60,17 @@ export const getOneUsuario = async (usuarioId, token) => {
     return response.data;
       
 };
+
+//nao to segura disso estar certo
+export const getAtendimentos = async (clienteId, token) => {
+    const response = await api.get(`/atendimentos/${clienteId}`, setHeaders(token));
+
+    return response.data;
+};
+
+//nao to segura disso estar certo
+export const createAtendimentoTipoFisico = async (atendimentoId, token) => {
+    const response = await api.post(`/atendimentos/${atendimentoId}`, setHeaders(token));
+
+    return response.data;
+}
