@@ -36,7 +36,7 @@ function Loja (props) {
         }
     };
 
-    const handleChange = async (e) => {
+    const handleChangeSearch = async (e) => {
         setSearchCliente(e.target.value);
     };
 
@@ -52,7 +52,7 @@ function Loja (props) {
         telefonePrincipal: yup.string(),
     });
 
-    function CriarCliente () {
+    
 
         const { values, touched, errors, handleChange, handleBlur, handleSubmit, setErros 
         } = useFormik({
@@ -73,7 +73,7 @@ function Loja (props) {
         
             }
         });
-    }
+    
 
     //CRIAR O ATENDIMENTO EM SI
     //Problemas: 
@@ -83,36 +83,36 @@ function Loja (props) {
     //status: nao cooloquei no banco que é enum [continuar ou declinar] - difinido pelo botao.
     //outro problema é que no schema do Atendimento do banco ja to passando clienteId e aqui to registrando cliente tmb - la em cima - confusao mental
     const atendimentoFisicoSchema = yup.object().shape({
-        tipo: yup.string().required(true),
+        // tipo: yup.string().required(),
         tipoFisico: yup.string(),
         pedido: yup.string(),
         status: yup.string()
 
     });
 
-    function CriarAtendimentoFisico () {
-        const { values, touched, errors, handleChange, handleBlur, handleSubmit, setErrors,
-        } = useFormik({
-            initialValues: { tipo: 'fisico', tipoFisico: '', pedido: '', status: ''},
-            validationSchema: atendimentoFisicoSchema,
-            onSubmit: async (formData) => {
-                try {
-                    await createAtendimentoTipoFisico(formData.tipo, formData.tipoFisico, formData.pedido, formData.status);
+   
+        // const { values, touched, errors, handleChange, handleBlur, handleSubmit, setErrors,
+        // } = useFormik({
+        //     initialValues: { tipo: 'fisico', tipoFisico: '', pedido: '', status: ''},
+        //     validationSchema: atendimentoFisicoSchema,
+        //     onSubmit: async (formData) => {
+        //         try {
+        //             await createAtendimentoTipoFisico(formData.tipo, formData.tipoFisico, formData.pedido, formData.status);
 
-                    console.log('formulario atendimento submetido', formData);
+        //             console.log('formulario atendimento submetido', formData);
 
-                } catch (error) {
-                    console.log(error)
-                    setErrors({
-                        tipo: error.response.data.message,
-                        tipoFisico: error.response.data.message,
-                        pedido: error.response.data.message,
-                        status: error.response.data.message,
-                    });
-                }
-            },
-        });
-    }
+        //         } catch (error) {
+        //             console.log(error)
+        //             setErrors({
+        //                 tipo: error.response.data.message,
+        //                 tipoFisico: error.response.data.message,
+        //                 pedido: error.response.data.message,
+        //                 status: error.response.data.message,
+        //             });
+        //         }
+        //     },
+        // });
+    
 
     //o return esta fora da funcao pq nao sei 
     return (
@@ -132,7 +132,7 @@ function Loja (props) {
                                     type="text"
                                     placeholder='Digite para procurar um cliente'
                                     values={searchCliente}
-                                    onChange={handleChange}
+                                    onChange={handleChangeSearch}
                                 />
 
                             </FormGroup>
@@ -158,7 +158,7 @@ function Loja (props) {
                         <div className="forma-de-contato-container">
                         <Form>
                         <Form.Label>Forma de contato do atendimento</Form.Label>
-                            {['checkbox'].map((type) => (
+                            {['radio'].map((type) => (
                                 <div key={`inline-${type}`} className="mb-3">
                                 <Form.Check
                                     inline

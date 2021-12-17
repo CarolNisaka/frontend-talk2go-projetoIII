@@ -47,8 +47,8 @@ export const getOneCliente = async (clienteId, token) => {
 };
 
 //aqui é body ou apelido? 
-export const createOneCliente = async (body, token) => {
-    const response = await api.post('/clientes', body, setHeaders(token));
+export const createOneCliente = async (apelido, token) => {
+    const response = await api.post('/clientes', {apelido}, setHeaders(token));
 
     return response.data;
 };

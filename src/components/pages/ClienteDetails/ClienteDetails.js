@@ -37,6 +37,9 @@ function ClienteDetails () {
     return(
         <div>
             <TemplatePrivate>
+            <div className="full-page-details">
+
+            
                 <Link className="cliente-card" to="anything">
                     <h1>Detalhe do cliente</h1>
                 </Link>
@@ -66,10 +69,12 @@ function ClienteDetails () {
                 </div>
 
                 <div>
-                    <Button>
+                    <Button
+                    a href="/clientes/:clienteId/atendimento">
                         Criar novo atendimento
                     </Button>
                 
+                </div>
                 </div>
             </TemplatePrivate>
         </div>

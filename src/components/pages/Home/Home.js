@@ -49,7 +49,7 @@ function Home (props) {
 
             <Button className='button-chanel'
                 variant="outline-primary"
-                a href='/atendimentoloja'>
+                a href='/atendimentofisico'>
                 Cliente na loja Eldorado 
                 <MdOutlineStorefront/>
             </Button>
