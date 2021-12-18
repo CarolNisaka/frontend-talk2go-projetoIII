@@ -1,9 +1,10 @@
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: whitesmoke;
+    /* color: whitesmoke; */
     
 }
 .login-title {
+    color: whitesmoke;
     width: 100%;
     text-align: center;
     font-weight: bold;
@@ -12,17 +13,20 @@
 }
 
 .login-text {
+    color: whitesmoke;
     font-size: 24px;
     margin-top: 80px;
   
 }
 
 .login-submit-button {
+    color: whitesmoke;
     margin-top: 30px ;
     width: 100%;
 }
 
 .register {
+    
     margin-top: 10px ;
     width: 100%;
 }

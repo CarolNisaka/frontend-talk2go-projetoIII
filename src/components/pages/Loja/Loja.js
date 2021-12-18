@@ -8,7 +8,7 @@ import { MdOutlineStorefront, MdStorefront } from 'react-icons/md';
 import { useFormik } from "formik";
 import * as yup from 'yup';
 
-import ClienteDetails from '../ClienteDetails/ClienteDetails';
+import ClienteDetails from '../CriarAtendimento/CriarAtendimento';
 
 import { getClientes } from '../../../services/api';
 import { createOneCliente } from "../../../services/api";
@@ -82,13 +82,13 @@ function Loja (props) {
     //pedido: o ok pq é etxto livre
     //status: nao cooloquei no banco que é enum [continuar ou declinar] - difinido pelo botao.
     //outro problema é que no schema do Atendimento do banco ja to passando clienteId e aqui to registrando cliente tmb - la em cima - confusao mental
-    const atendimentoFisicoSchema = yup.object().shape({
-        // tipo: yup.string().required(),
-        tipoFisico: yup.string(),
-        pedido: yup.string(),
-        status: yup.string()
+    // const atendimentoFisicoSchema = yup.object().shape({
+    //     // tipo: yup.string().required(),
+    //     tipoFisico: yup.string(),
+    //     pedido: yup.string(),
+    //     status: yup.string()
 
-    });
+    // });
 
    
         // const { values, touched, errors, handleChange, handleBlur, handleSubmit, setErrors,

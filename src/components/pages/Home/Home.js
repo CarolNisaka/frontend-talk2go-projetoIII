@@ -36,7 +36,7 @@ function Home (props) {
        <TemplatePrivate>
         
         <div className='welcome'>
-            <h1>Ola,   !  Hoje é </h1>
+            <h1>Bem vindo a sua área de trabalho </h1>
             
             
         </div>

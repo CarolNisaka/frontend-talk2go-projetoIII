@@ -1,0 +1,38 @@
+.fullpage-atendimento-container {
+    display: flex;
+    background-color: #282c34;
+    color: whitesmoke;
+    align-items: center;
+    
+    
+}
+
+.atendimento-container {
+    width: 70%;
+    max-width: 1280px;
+    height: 100vh;
+    padding: 30px;
+    /* border: 2px solid red */
+    color: whitesmoke;
+}
+
+.cliente-container {
+    flex: 0,5;
+    padding: 30px;
+    color: whitesmoke;
+   
+}
+
+.atendimentos-anteriores-container {
+    flex: 0,5;
+    border: 2px solid #526c9c;
+    padding: 30px;
+    color: whitesmoke;
+}
+
+.card-infos {
+    background-color: #252a35;
+    border: 2px solid #526c9c;
+     color: whitesmoke;
+}
+

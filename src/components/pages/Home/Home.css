@@ -2,6 +2,7 @@
     padding: 10px;
     background-color: #282c34;
     color: black;
+    color: whitesmoke;
 }
 
 .chanel {
@@ -9,8 +10,10 @@
     background-color: rgb(3, 54, 54);
     text-align: center;
     height: 30vh;
+    color: whitesmoke;
 }
 
 .button-chanel {
     margin: 20px;
+    color: whitesmoke;
 }

@@ -6,10 +6,11 @@ import './App.css';
 import Login from './components/pages/Login/Login';
 import Register from './components/pages/Register/Register';
 import Home from './components/pages/Home/Home';
-import Loja from './components/pages/Loja/Loja';
+
 import Clientes from './components/pages/Clientes/Clientes';
-import ClienteDetails from './components/pages/ClienteDetails/ClienteDetails';
+import CriarAtendimento from './components/pages/CriarAtendimento/CriarAtendimento';
 import AtendimentoFisico from './components/pages/AtendimentoFisico/AtendimentoFisico';
+import EditarCliente from './components/pages/Clientes/EditarCliente';
 
 import ProtectedRoute from './components/miscelaneous/ProtectedRoute/ProtectedRoute';
 
@@ -28,9 +29,10 @@ function App () {
 
       <Route path="/home" element={<ProtectedRoute isUserLogged={isUserLogged} Page={Home}/>} />
 
-      <Route path="/clientes" element={<ProtectedRoute isUserLogged={isUserLogged} Page={Clientes}/>} />
-      <Route path="/clientes/:clienteId" element={<ProtectedRoute isUserLogged={isUserLogged} Page={ClienteDetails}/>} />
-      
+      <Route path="/clientes/listaclientes" element={<ProtectedRoute isUserLogged={isUserLogged} Page={Clientes}/>} />
+      <Route path="/clientes/:clienteId" element={<ProtectedRoute isUserLogged={isUserLogged} Page={CriarAtendimento}/>} />
+      <Route path="/clientes/:clienteId/editarcliente" element={<ProtectedRoute isUserLogged={isUserLogged} Page={EditarCliente}/>} />
+
       <Route path = "/atendimentofisico" element={<ProtectedRoute isUserLogged={isUserLogged} Page={AtendimentoFisico}/>} />
       
     </Routes>

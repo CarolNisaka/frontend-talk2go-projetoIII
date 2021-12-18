@@ -69,8 +69,20 @@ export const getAtendimentos = async (clienteId, token) => {
 };
 
 //nao to segura disso estar certo
-export const createAtendimentoTipoFisico = async (atendimentoId, token) => {
-    const response = await api.post(`/atendimentos/${atendimentoId}`, setHeaders(token));
+export const createAtendimentoTipoFisico = async (clienteId, tipo, tipoFisico, pedido, token) => {
+    const response = await api.post(`/atendimentos`,{clienteId, tipo, tipoFisico, pedido}, setHeaders(token));
 
     return response.data;
-}
+};
+
+export const editOneCliente = async (clienteId, body, token) => {
+    const response = await api.put( `/clientes/${clienteId}`,body, setHeaders(token));
+
+    return response.data;
+};
+
+export const deleteOneClienteById = async (clienteId, token) => {
+    const response = await api.delete( `/clientes/${clienteId}`, setHeaders(token));
+
+    return response.data;
+};

@@ -36,7 +36,7 @@ function TemplatePrivate ({ children}) {
 
                     <a 
                     className="cliente"
-                    href="/clientes"
+                    href="/clientes/listaclientes"
                     >
                     <IoIosPeople size="35px"/>
                     </a>

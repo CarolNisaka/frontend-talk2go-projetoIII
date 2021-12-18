@@ -2,32 +2,38 @@
     background-color: rgb(3, 30, 56);
     height: 100vh;
     display: flex;
+    color: whitesmoke;
 }
 
 .atendimento-container {
     margin: 30px;
     align-items: center;
     border: 2px solid red;
+    color: whitesmoke;
     
 }
 
 .cliente-container{
     margin: 10px;
-    color: royalblue !important;
+    color: whitesmoke;
 }
 
 .pedido-container {
     margin: 10px;
+    color: whitesmoke;
 }
 
 .forma-de-contato-container {
     margin: 10px;
+    color: whitesmoke;
 }
 
 .button-declinar {
     margin: 10px;
+    color: whitesmoke;
 }
 
 .button-continuar {
     margin: 10px;
+    color: whitesmoke;
 }
