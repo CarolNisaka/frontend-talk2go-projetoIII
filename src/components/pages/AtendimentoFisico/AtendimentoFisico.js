@@ -96,7 +96,7 @@ function AtendimentoFisico (props) {
                                 <FormGroup as={Col} md='12' controlId="login-form">
                                     <Form.Control
                                         type="text"
-                                        placeholder='Digite para procurar um cliente'
+                                        placeholder='Com quem você está falando agora?'
                                         value={values.apelido}
                                         name="apelido"
                                         onChange={handleChange}
