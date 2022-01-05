@@ -9,6 +9,8 @@ import { Modal, Button, Card } from 'react-bootstrap';
 import { getOneCliente } from '../../../services/api';
 import FormularioEditar from "./FomularioEditar";
 
+import './EditarCliente.css';
+
 function EditarCliente () {
 
     const[clienteDetail, setClienteDetail] = useState({});
@@ -38,7 +40,7 @@ function EditarCliente () {
     return (
         <TemplatePrivate>
             
-                <Card className="card-infos" style={{ width: '25rem' }}>
+                <Card className="card-infos" style={{ width: '100rem' }}>
                     <h3>Detalhes do cliente</h3>
                         <Card.Body>
                             <Card.Title>{clienteDetail.apelido}</Card.Title>
@@ -59,7 +61,7 @@ function EditarCliente () {
                     </Card.Body>
                 </Card>
 
-                <Button variant="primary" onClick={handleShow}>
+                <Button className="editar-button" variant="warning" onClick={handleShow}>
                     Editar dados do cliente
                 </Button>
 

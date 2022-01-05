@@ -114,7 +114,7 @@ function AtendimentoFisico (props) {
 
                 </div>
 
-                <div className="clientes-container">
+                <div className="clientes-container-atendimento">
                 {clientes.map((cliente)=> (
                     <Link className="cliente-card" key={cliente._id} to={`/clientes/${cliente._id}`}>
                         <p>{cliente.apelido}</p>
